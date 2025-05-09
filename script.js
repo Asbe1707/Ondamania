@@ -117,21 +117,4 @@ function askQuestion() {
     });
     box.classList.remove('hidden');
 }
-function goToStart() {
-    // Oculta todas las pantallas activas
-    document.getElementById('game-container').classList.add('hidden');
-    document.getElementById('question-box').classList.add('hidden');
 
-    // Muestra la pantalla de inicio
-    document.getElementById('start-screen').classList.remove('hidden');
-
-    // Limpia el tablero y los datos
-    document.getElementById('board').innerHTML = '';
-    document.getElementById('scoreboard').innerHTML = '';
-    document.getElementById('dice').textContent = '🎲';
-
-    // Reinicia variables (opcional)
-    currentPlayer = 0;
-    positions = [];
-    scores = [];
-}
