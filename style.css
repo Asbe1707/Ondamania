@@ -90,6 +90,22 @@ h1 {
 #question-box p {
     font-weight: bold;
 }
+button {
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  font-size: 1em;
+  padding: 10px 20px;
+  background-color: #004080;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0066cc;
+}
+
 .answer {
     padding: 10px;
     margin: 5px;
@@ -100,3 +116,9 @@ h1 {
 }
 .answer.correct { background-color: #a0f5a0; }
 .answer.incorrect { background-color: #f5a0a0; }
+function goToStart() {
+    document.getElementById('game-container').classList.add('hidden');
+    document.getElementById('question-box').classList.add('hidden');
+    document.getElementById('start-screen').classList.remove('hidden');
+}
+
