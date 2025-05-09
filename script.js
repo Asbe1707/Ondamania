@@ -29,7 +29,7 @@ const questions = [
 
 
 let currentPlayer = 0;
-let numPlayers = 2;
+let numPlayers = 1;
 let positions = [];
 let scores = [];
 
