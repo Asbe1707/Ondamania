@@ -116,9 +116,4 @@ button:hover {
 }
 .answer.correct { background-color: #a0f5a0; }
 .answer.incorrect { background-color: #f5a0a0; }
-function goToStart() {
-    document.getElementById('game-container').classList.add('hidden');
-    document.getElementById('question-box').classList.add('hidden');
-    document.getElementById('start-screen').classList.remove('hidden');
-}
 

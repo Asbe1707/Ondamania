@@ -117,3 +117,8 @@ function askQuestion() {
     });
     box.classList.remove('hidden');
 }
+function goToStart() {
+    document.getElementById('game-container').classList.add('hidden');
+    document.getElementById('question-box').classList.add('hidden');
+    document.getElementById('start-screen').classList.remove('hidden');
+}
